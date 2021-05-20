@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <style type="text/css">
+            body{
+                background-image: url(krs5.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: blur;
+            }
+  </style>
+    <body>
+<center>
+<h1 style="font-size:280%;" >KRS WATER AVAILABILITY</h1><br>
+ <form method="POST",action="{{url_for('home')}}",>
+<b> Date:<input type="text", name='a',placeholder='enter 1'><br><br>
+       Month:<input type="text", name='b',placeholder='enter 2'><br><br>
+       Year:<input type="text", name='c',placeholder='enter 3'><br><br>
+       Res_level:<input type="text", name='d',placeholder='enter 4'><br><br>
+       Inflow:<input type="text", name='e',placeholder='enter 5'><br><br>
+       Outflow:<input type="text", name='f',placeholder='enter 6'><br><br><br><br>
+        <input type="submit",value="predict">
+ </form>
+
+
+
+
+     </div>
+ </div>
+</center>
+ {{ prediction_text }}
+
+    </body>
+</html>
